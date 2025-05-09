@@ -1,0 +1,9 @@
+# Maven
+/target/
+
+# Archivos temporales del sistema
+*.log
+*.class
+*.jar
+*.iml
+.vscode/
