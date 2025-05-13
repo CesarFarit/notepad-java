@@ -10,10 +10,9 @@ public class PanelComponent extends JPanel {
 
     public PanelComponent() {
         this.setLayout(new BorderLayout());
-        this.setBackground(Color.WHITE);
         this.textAreaPanel = new TextAreaPanel();
-        this.buttonPanel = new ButtonPanel();
-
+        this.buttonPanel = new ButtonPanel(textAreaPanel);
+        this.setBackground(Color.RED);
         this.add(textAreaPanel, BorderLayout.CENTER);
         this.add(buttonPanel, BorderLayout.NORTH);
     }
